@@ -12,3 +12,4 @@ python sensor_data_fusion.py --input_file INPUT_FILE_PATH --output_file OUTPUT_F
 ```bash
 python sensor_data_fusion.py
 ```
+data_fusion.ipynb was used for testing and code debugging
