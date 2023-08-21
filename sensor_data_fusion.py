@@ -20,7 +20,7 @@ def fuse_sensor_data(grouped_data,filename,threshold=2.0):
             datetime_values = pd.to_datetime(cluster_data['timestamp_id']).view(np.int64)
             avg_timestamp = pd.Timestamp(datetime_values.mean()).isoformat(timespec='milliseconds') + "Z"
 
-            # print(avg_timestamp)
+            # print(avg_timestamp,timestamp)
 
 
             known_unique_ids = cluster_data[cluster_data['unique_id'] != 0]['unique_id'].unique()
